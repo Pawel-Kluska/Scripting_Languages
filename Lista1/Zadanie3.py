@@ -17,6 +17,6 @@ for email in listOfEmails:
     else:
         domains[domain] = 1
 
-for elem in domains:
-    print("{0:8s} {1:2d}".format(elem, domains[elem]))
+for elem, domain in domains.items():
+    print("{0:8s} {1:2d}".format(elem, domain))
 

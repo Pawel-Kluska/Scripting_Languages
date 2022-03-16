@@ -26,7 +26,6 @@ print("Odwrotnie posortowana: " + str(list))
 
 list = [19, 3, 15, 43, 98, 16, 9, 23, 4]
 
-list2 = list[0:3]
-list2.sort()
-list = list2 + list[3:]
+list = sorted(list[0:3]) + list[3:]
+
 print(list)
