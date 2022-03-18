@@ -13,7 +13,7 @@ for i in colors:
 print(f"Karty {list_of_cards}")
 random.shuffle(list_of_cards)
 
-random_cards = random.choices(list_of_cards, k=10)
+random_cards = random.sample(list_of_cards, 10)
 gracz_1 = random_cards[:5]
 gracz_2 = random_cards[5:]
 

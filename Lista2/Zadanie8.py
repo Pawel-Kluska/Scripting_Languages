@@ -1,5 +1,3 @@
-import os
-
 filename = 'data.txt'
 
 line = 'Animals:'
