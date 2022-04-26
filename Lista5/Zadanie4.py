@@ -6,8 +6,14 @@ by_date = get_dict_date(all_cases)
 by_country = get_dict_country(all_cases)
 
 
-def for_date_country_a(year, month, day, country):
+def measure_time4(fun, year, month, day, country):
     start = timer()
+    fun(year, month, day, country)
+    end = timer()
+    print("Time: {} ".format((end - start) * 1000))
+
+
+def for_date_country_a(year, month, day, country):
     d = 0
     c = 0
     for i in all_cases:
@@ -15,13 +21,11 @@ def for_date_country_a(year, month, day, country):
         if name == country and (year_, month_, day_) == (year, month, day):
             c += case
             d += death
-    end = timer()
-    print("For date country a: {} ".format((end - start) * 1000))
+
     return c, d
 
 
 def for_date_country_d(year, month, day, country):
-    start = timer()
     d = 0
     c = 0
     cases = by_date[(year, month, day)]
@@ -30,13 +34,11 @@ def for_date_country_d(year, month, day, country):
         if name == country:
             c += case
             d += death
-    end = timer()
-    print("For date country d: {} ".format((end - start) * 1000))
+
     return c, d
 
 
 def for_date_country_c(year, month, day, country):
-    start = timer()
     d = 0
     c = 0
     countries = by_country[country]
@@ -45,11 +47,14 @@ def for_date_country_c(year, month, day, country):
         if (year, month, day) == (year_, month_, day_):
             c += case
             d += death
-    end = timer()
-    print("For date country c: {} ".format((end - start) * 1000))
+
     return c, d
 
 
 print(for_date_country_a(2020, 11, 23, 'Afghanistan'))
 print(for_date_country_c(2020, 11, 23, 'Afghanistan'))
 print(for_date_country_d(2020, 11, 23, 'Afghanistan'))
+
+measure_time4(for_date_country_a, 2020, 11, 23, 'Afghanistan')
+measure_time4(for_date_country_c, 2020, 11, 23, 'Afghanistan')
+measure_time4(for_date_country_d, 2020, 11, 23, 'Afghanistan')
