@@ -48,13 +48,13 @@ class FirstName(ControlledText):
             return False
 
     def is_female(self):
-        return self.male_name(self.text)
-
-    def is_male(self):
         return self.female_name(self.text)
 
+    def is_male(self):
+        return self.male_name(self.text)
 
-# ob = FirstName("   ")
+
+# ob = FirstName("  ")
 # print(ob.name)
 # ob.name = "Lena"
 # print(ob.name)

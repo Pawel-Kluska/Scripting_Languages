@@ -1,7 +1,6 @@
 from Zadanie4 import Ident_number
 from Zadanie2 import FirstName
 from Zadanie3 import LastName
-import re
 
 
 class Person:
@@ -34,12 +33,12 @@ class Person:
         return Person(number_object, first_name_object, last_name_object)
 
 
-# nr = Ident_number(111111107)
-# f_name = FirstName('Jan')
-# l_name = LastName('Kowalski')
-#
-# p1 = Person(nr, f_name, l_name)
-# p2 = Person("111111107/Jan/Kowalski")
-# p1.fromString('111111107/Jan/Kowalski')
-#
-# print('{} {} {}'.format(p1.number_obj, p1.last_name_obj, p1.first_name_obj))
+nr = Ident_number(111111107)
+f_name = FirstName('Jan')
+l_name = LastName('Kowalski')
+
+p1 = Person(nr, f_name, l_name)
+p2 = Person("111111107/Jan/Kowalski")
+p1.fromString('111111107/Jan/Kowalski')
+
+print('{}{}{}'.format(p1.number_obj, p1.last_name_obj, p1.first_name_obj))

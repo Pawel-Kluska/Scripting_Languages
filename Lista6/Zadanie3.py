@@ -22,7 +22,7 @@ class LastName(ControlledText):
                 proper_name += '-'
             proper_name = proper_name[:len(proper_name) - 1]
 
-            if  value == proper_name:
+            if value == proper_name:
                 self.text = value
             else:
                 raise ValueError('The last name should start with capital letter')

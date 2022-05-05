@@ -9,4 +9,4 @@ with open(file, 'r', encoding='utf-8') as f:
         person = Person(line.strip())
         list_of_persons.append(person)
 
-print(list_of_persons)
+# print(list_of_persons)

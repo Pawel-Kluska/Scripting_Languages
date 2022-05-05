@@ -30,5 +30,5 @@ class Ident_number(ControlledText):
         raise ValueError('You cant change value')
 
 
-num = Ident_number(111111107)
+# num = Ident_number(111111107)
 # num.number = 234235234
