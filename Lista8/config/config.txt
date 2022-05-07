@@ -1,0 +1,3 @@
+[DEFAULT]
+bazowa_geometria = 915x523+223+103
+
