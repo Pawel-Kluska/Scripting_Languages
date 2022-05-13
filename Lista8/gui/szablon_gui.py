@@ -1,9 +1,3 @@
-'''
-Created on 2021-03-22
-
-@author: Andrzej
-'''
-
 import configparser
 import tkinter as tk
 import tkinter.messagebox
@@ -39,7 +33,7 @@ class BazoweGui(tk.Frame):
         self.parent.geometry(self.geometria_baza)
         self.utworz_bazowe_menu()
         self.utworz_pasek_narzedzi()
-        self.utworz_status()
+        self.utworz_status("Status")
         self.utworz_okno_podstawowe()
         self.dodaj_menu_help()
         self.parent.columnconfigure(0, weight=999)
@@ -64,19 +58,17 @@ class BazoweGui(tk.Frame):
                 button = tkinter.Button(self.toolbar, image=image,
                                         command=command)
                 button.grid(row=0, column=len(self.toolbar_images) - 1)  # KOLEJNE ELEMENTY
-                self.toolbar.bind(shortcut, command)
+                self.parent.bind(shortcut, command)
             except tkinter.TclError as err:
                 print(err)  # gdy kłopoty z odczytaniem pliku
         self.toolbar.grid(row=0, column=0, columnspan=2, sticky=tkinter.NSEW)
 
-
-    def utworz_status(self):
-        self.statusbar = tk.Label(self.parent, text="Linia statusu...",
+    def utworz_status(self, status):
+        self.statusbar = tk.Label(self.parent, text=status,
                                   anchor=tkinter.W)
         self.statusbar.after(5000, self.clearStatusBar)
         self.statusbar.grid(row=2, column=0, columnspan=2,
                             sticky=tkinter.EW)
-        pass
 
     def ustawStatusBar(self, txt):
         self.statusbar["text"] = txt
@@ -89,11 +81,11 @@ class BazoweGui(tk.Frame):
         self.parent["menu"] = self.menubar
         fileMenu = tk.Menu(self.menubar)
         for label, command in (
-                ("New...", self.utworz_okno_robocze),
-                ("Show...", self.utworz_okno_wyswietlajace()),
-                ("Open Covid File...", self.covid_file_open),
-                ("Open Logs File...", self.log_file_open),
-                ("Save", self.file_save),
+                ("New Ctrl-N", self.utworz_okno_robocze),
+                ("Show Ctrl-O", self.utworz_okno_wyswietlajace()),
+                ("Open Covid File Ctrl-C", self.covid_file_open),
+                ("Open Logs File Ctrl-L", self.log_file_open),
+                ("Save Ctrl-S", self.file_save),
                 (None, None),
                 ("Quit", self.file_quit)):
             if label is None:
@@ -102,7 +94,6 @@ class BazoweGui(tk.Frame):
                 fileMenu.add_command(label=label, underline=0,
                                      command=command)
         self.menubar.add_cascade(label="File", menu=fileMenu, underline=0)
-        pass
 
     def dodaj_menu_help(self):
         fileMenu = tk.Menu(self.menubar)
@@ -125,25 +116,28 @@ class BazoweGui(tk.Frame):
 
     def new_help(self):
         messagebox.showinfo('Informacja', "Przycisk tworzy nowy arkusz wprowadzania")
+
     def show_help(self):
         messagebox.showinfo('Informacja', 'Po wciśnięciu zostaną wyświetlone wyniki wprowadzonej wcześniej komendy')
+
     def covid_file_help(self):
         messagebox.showinfo('Informacja', 'Służy do wybrania pliku z danymi Covidowymi')
+
     def log_file_help(self):
         messagebox.showinfo('Informacja', 'Służy do wybrania pliku z logami')
+
     def file_save_help(self):
         messagebox.showinfo('Informacja', 'Służy do zapisu wyników do plików z logami')
+
     def file_quit_help(self):
         messagebox.showinfo('Informacja', 'Wyjście z programu')
 
     def command_help(self):
         messagebox.showinfo('Informacja', 'Komendy mają następujący schemat\n\n' +
-                                          'show sum/list of cases/deaths in territory (for nr month)' +
-                                          '/ (between day1 month1 and day2 month2) order by cases/deaths/day desc/asc\n\n' +
-                            'Przykład: show sum of cases in Asia for 1 April order by cases desc \n\n'+
+                            'show sum/list of cases/deaths in territory (for nr month)' +
+                            '/ (between day1 month1 and day2 month2) order by cases/deaths/day desc/asc\n\n' +
+                            'Przykład: show sum of cases in Asia for 1 April order by cases desc \n\n' +
                             'show list of deaths in Afghanistan between 1 November and 30 November order by date asc')
-
-
 
     def file_quit(self, event=None):
         reply = tkinter.messagebox.askyesno(
@@ -156,8 +150,6 @@ class BazoweGui(tk.Frame):
             with open(dane_konfig, 'w') as konfig_plik:
                 self.konfig.write(konfig_plik)
             self.parent.destroy()
-        pass
-
 
     def covid_file_open(self, event=None):
         dir = (os.path.dirname(self.covid_file)
@@ -169,6 +161,7 @@ class BazoweGui(tk.Frame):
             defaultextension=".txt", parent=self.parent)
         if filename:
             self.covid_file = filename
+        self.utworz_status("Covid file loaded")
 
     def log_file_open(self, event=None):
         dir = (os.path.dirname(self.log_file)
@@ -180,6 +173,7 @@ class BazoweGui(tk.Frame):
             defaultextension=".txt", parent=self.parent)
         if filename:
             self.log_file = filename
+        self.utworz_status("Logs file loaded")
 
     def file_save(self, event=None):
         event = event
@@ -188,6 +182,7 @@ class BazoweGui(tk.Frame):
             messagebox.showinfo("Info", "Zapisano pomyślnie")
         else:
             messagebox.showinfo("Info", "Nie znalezniono danych")
+        self.utworz_status("Output saved")
 
     def utworz_okno_robocze(self):
 
@@ -220,6 +215,7 @@ class BazoweGui(tk.Frame):
                   y=120,
                   width=100,
                   height=50)
+        self.utworz_status("Command view")
 
     def utworz_okno_podstawowe(self):
 
@@ -247,8 +243,7 @@ class BazoweGui(tk.Frame):
         v.pack(side=RIGHT, fill='y')
 
         # Add a text widget
-        text = tk.Text(self.robocze, font=("Georgia, 24"), yscrollcommand=v.set)
-
+        text = tk.Text(self.robocze, font="Georgia, 24", yscrollcommand=v.set)
 
         text.insert(END, out + '\n')
 
@@ -258,3 +253,4 @@ class BazoweGui(tk.Frame):
 
         self.robocze.grid(row=1, column=0, columnspan=1, rowspan=1, sticky=NSEW)
 
+        self.utworz_status("Output view")

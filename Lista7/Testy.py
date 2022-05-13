@@ -25,5 +25,5 @@ obj = CovidService.CovidService("Covid.txt")
 
 service = CovidService.CovidService('Covid.txt')
 t = Natural_Language_Translator.Translator(service)
-result = t.translate('show sum of cases in Asia for 1 April order by cases desc')
+result = t.translate('show list of cases in Asia for 1 April order by cases desc')
 print(result)

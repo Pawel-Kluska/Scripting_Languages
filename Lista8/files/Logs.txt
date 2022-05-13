@@ -1577,3 +1577,187 @@ show sum of cases in Asia for 1 April order by cases desc
 Date: 
 14:31:38 2022-05-07 Output: Sum of cases for Asia: 5002
 show sum of cases in Asia for 1 April order by cases desc
+
+Date: 
+20:32:27 2022-05-11 Output: Cases for Asia 
+1/4/2020 - 3111 cases 
+1/4/2020 - 443 cases 
+1/4/2020 - 414 cases 
+1/4/2020 - 146 cases 
+1/4/2020 - 140 cases 
+1/4/2020 - 114 cases 
+1/4/2020 - 110 cases 
+1/4/2020 - 88 cases 
+1/4/2020 - 64 cases 
+1/4/2020 - 54 cases 
+1/4/2020 - 53 cases 
+1/4/2020 - 52 cases 
+1/4/2020 - 35 cases 
+1/4/2020 - 25 cases 
+1/4/2020 - 24 cases 
+1/4/2020 - 23 cases 
+1/4/2020 - 23 cases 
+1/4/2020 - 17 cases 
+1/4/2020 - 16 cases 
+1/4/2020 - 15 cases 
+1/4/2020 - 13 cases 
+1/4/2020 - 6 cases 
+1/4/2020 - 6 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 1 cases 
+1/4/2020 - 1 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+
+show list of cases in Asia for 1 April order by cases desc
+
+Date: 
+15:12:29 2022-05-12 Output: Sum of cases for Asia: 5002
+show sum of cases in Asia for 1 April order by cases desc
+
+Date: 
+15:21:01 2022-05-12 Output: Cases for Asia 
+1/4/2020 - 3111 cases 
+1/4/2020 - 443 cases 
+1/4/2020 - 414 cases 
+1/4/2020 - 146 cases 
+1/4/2020 - 140 cases 
+1/4/2020 - 114 cases 
+1/4/2020 - 110 cases 
+1/4/2020 - 88 cases 
+1/4/2020 - 64 cases 
+1/4/2020 - 54 cases 
+1/4/2020 - 53 cases 
+1/4/2020 - 52 cases 
+1/4/2020 - 35 cases 
+1/4/2020 - 25 cases 
+1/4/2020 - 24 cases 
+1/4/2020 - 23 cases 
+1/4/2020 - 23 cases 
+1/4/2020 - 17 cases 
+1/4/2020 - 16 cases 
+1/4/2020 - 15 cases 
+1/4/2020 - 13 cases 
+1/4/2020 - 6 cases 
+1/4/2020 - 6 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 1 cases 
+1/4/2020 - 1 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+
+show list of cases in Asia for 1 April order by cases desc
+
+Date: 
+15:41:56 2022-05-12 Output: Cases for Asia 
+1/4/2020 - 3111 cases 
+1/4/2020 - 443 cases 
+1/4/2020 - 414 cases 
+1/4/2020 - 146 cases 
+1/4/2020 - 140 cases 
+1/4/2020 - 114 cases 
+1/4/2020 - 110 cases 
+1/4/2020 - 88 cases 
+1/4/2020 - 64 cases 
+1/4/2020 - 54 cases 
+1/4/2020 - 53 cases 
+1/4/2020 - 52 cases 
+1/4/2020 - 35 cases 
+1/4/2020 - 25 cases 
+1/4/2020 - 24 cases 
+1/4/2020 - 23 cases 
+1/4/2020 - 23 cases 
+1/4/2020 - 17 cases 
+1/4/2020 - 16 cases 
+1/4/2020 - 15 cases 
+1/4/2020 - 13 cases 
+1/4/2020 - 6 cases 
+1/4/2020 - 6 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 1 cases 
+1/4/2020 - 1 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+
+show list of cases in Asia for 1 April order by cases desc
+
+Date: 
+15:50:48 2022-05-12 Output: Cases for Asia 
+1/4/2020 - 3111 cases 
+1/4/2020 - 443 cases 
+1/4/2020 - 414 cases 
+1/4/2020 - 146 cases 
+1/4/2020 - 140 cases 
+1/4/2020 - 114 cases 
+1/4/2020 - 110 cases 
+1/4/2020 - 88 cases 
+1/4/2020 - 64 cases 
+1/4/2020 - 54 cases 
+1/4/2020 - 53 cases 
+1/4/2020 - 52 cases 
+1/4/2020 - 35 cases 
+1/4/2020 - 25 cases 
+1/4/2020 - 24 cases 
+1/4/2020 - 23 cases 
+1/4/2020 - 23 cases 
+1/4/2020 - 17 cases 
+1/4/2020 - 16 cases 
+1/4/2020 - 15 cases 
+1/4/2020 - 13 cases 
+1/4/2020 - 6 cases 
+1/4/2020 - 6 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 2 cases 
+1/4/2020 - 1 cases 
+1/4/2020 - 1 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+1/4/2020 - 0 cases 
+
+show list of cases in Asia for 1 April order by cases desc
